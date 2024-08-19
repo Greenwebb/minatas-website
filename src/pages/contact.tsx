@@ -3,7 +3,6 @@ import SEOCom from "../components/seo";
 import HeaderTwo from "../layout/header/header-two";
 import BreadcrumbOne from "../components/breadcrumb/breadcrumb-one";
 import FooterOne from "../layout/footer/footer-one";
-import NewsletterBanner from "../components/newsletter/newsletter-banner";
 import ContactArea from "../components/contact/contact-area";
 
 export default function ContactPage() {

@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import LoanOriginator from '../Loan-forms/loanoriginator';
 
 // internal
-import PartnersSliderOne from "../partners/partners-slider-one";
 
 
 const HeroBannerSix = () => {

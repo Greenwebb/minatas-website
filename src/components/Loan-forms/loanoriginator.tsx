@@ -1,6 +1,3 @@
-import React, { useState } from 'react';
-import { useForm, SubmitHandler } from 'react-hook-form';
-
 
 
 const LoanOriginator: React.FC = () => {

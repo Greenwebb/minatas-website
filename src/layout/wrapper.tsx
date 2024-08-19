@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
 import { ToastContainer } from "react-toastify";
 import { animationCreate } from "../utils/utils";
 import Preloader from "../components/common/preloader.tsx";
@@ -7,8 +6,6 @@ import BackToTopCom from "../components/common/back-to-top-com";
 
 const Wrapper = ({ children }: { children: React.ReactNode }) => {
   const [loading, setLoading] = useState(true);
-  const location = useLocation(); // Hook to get the current location
-
   useEffect(() => {
     // Reset loading state on every route change
     setLoading(true);

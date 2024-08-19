@@ -1,9 +1,6 @@
 import { NavLink } from 'react-router-dom';
 // internal
 import service_data from '../../data/service-data';
-import FeedbackOne from '../feedback/feedback-one';
-import PartnersSliderOne from '../partners/partners-slider-one';
-import FancyBannerFive from '../fancy-banner/fancy-banner-five';
 import FaqSectionOne from '../faq/faq-section-one';
 
 // card item 

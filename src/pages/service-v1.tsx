@@ -4,7 +4,6 @@ import HeaderTwo from "../layout/header/header-two";
 import BreadcrumbOne from "../components/breadcrumb/breadcrumb-one";
 import ServiceOneArea from "../components/services/service-v1-area";
 import FancyBannerThree from "../components/fancy-banner/fancy-banner-three";
-import NewsletterBanner from "../components/newsletter/newsletter-banner";
 import FooterFour from "../layout/footer/footer-four";
 
 export default function ServiceV1Page() {

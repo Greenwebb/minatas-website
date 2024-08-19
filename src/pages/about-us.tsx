@@ -23,7 +23,7 @@ export default function AboutUsPage() {
     
       <div className="main-page-wrapper">
         {/* header start */}
-        <HeaderTwo logo="/assets/images/logo/logo_02.svg" />
+        <HeaderTwo />
         {/* header end */}
         <main>
           {/* breadcrumb start */}
