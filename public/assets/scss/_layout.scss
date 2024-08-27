@@ -877,6 +877,11 @@
             top: 27rem;
             left:2px;
             position: relative;
+
+            a{
+                color: $color-white !important;    
+            }
+           
         }
         li {
             display: inline-block;

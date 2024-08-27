@@ -153,7 +153,7 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
             <i className="bi bi-arrow-right"></i>
           </div>
         </a>
-        <ul className="style-none contact-info m0 pt-30">
+        <ul className="style-none text-white contact-info m0 pt-30">
           <li className="d-flex align-items-center p0 mt-15">
             <img
               src="/assets/images/icon/icon_14.svg"
