@@ -14,15 +14,15 @@ const TextFeatureThree = ({cls,style_2}:{cls?:string;style_2?:boolean}) => {
               <h2>Guideline for your financial grow.</h2>
             </div>
             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-30">
-            Minatas Resources Limited is a pioneering financial institution founded by a visionary Zambian female entrepreneur committed to advancing financial inclusion for individuals and businesses traditionally excluded by mainstream financial institutions. Established in 2022 under the auspices of Minatas Resources Limited, the company operates under the framework of the Lenders Licensing Act and Ministry of Finance in Zambia, with a mission to provide tailored financial products and solutions to Micro, Small, and Medium Enterprises (MSMEs) and individuals.
+            Minatas Resources Limited is a pioneering financial institution committed to advancing financial inclusion for individuals and businesses traditionally excluded by mainstream financial institutions. Established in 2022 under the auspices of Minatas Resources Limited, the company operates under the framework of the Lenders Licensing Act and Ministry of Finance in Zambia, with a mission to provide tailored financial products and solutions to Micro, Small, and Medium Enterprises (MSMEs) and individuals.
             <br /><br />
-            Rooted in extensive research of financial markets, Minatas Microfinance Limited emerged from strategic insights aimed at addressing the financial needs of underserved communities. Originally established in 2016 under Minatas Resources Limited, the company transitioned its focus to microfinance in 2022 and 2023, securing official registration with the Ministry of Finance and the Money Lenders Licensing Agency.
+            Rooted in extensive research of financial markets, Minatas Microfinance Limited emerged from strategic insights aimed at addressing the financial needs of underserved communities.
             </p>
           </div>
           <div className="col-xxl-6 col-lg-5 d-flex order-lg-first wow fadeInLeft">
             <div className="media-wrapper w-100 position-relative">
-              <img src="/assets/images/icon/leaves.svg" alt="screen" className="lazy-img shapes screen_01"/>
-              <img src="/assets/images/assets/pattern.svg" alt="screen" className="lazy-img shapes screen_02"/>
+              <img src="/assets/images/icon/leaves.svg" alt="screen" className="lazy-img shapes about_us screen_01"/>
+              <img src="/assets/images/assets/pattern.svg" alt="screen" className="lazy-img shapes about_us screen_02"/>
             </div>
           </div>
         </div>

@@ -32,7 +32,7 @@ const BlockFeatureEight = () => {
                   <p className="mb-25">
                     {item.desc}
                   </p>
-                  <NavLink to="/service-details"
+                  <NavLink to={"/service-details?page=" + item.page}
                     className="arrow-btn tran3s mt-auto stretched-link"
                   >
                     <img src="/assets/images/icon/icon_09.svg" alt="icon" className="lazy-img" />

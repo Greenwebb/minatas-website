@@ -4,7 +4,40 @@ import { NavLink, useLocation } from "react-router-dom";
 import menu_data from "../../data/menu-data";
 
 const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
-  const { pathname } = useLocation();
+  const { pathname, search } = useLocation();
+
+  // Function to check if the link is exactly active, including query parameters
+  const isExactActiveLink = (link: string) => {
+    const fullPath = `${pathname}${search}`;
+
+    // Split the link into base path and search params
+    const [baseLinkPath, linkSearchParams] = link.split("?");
+    const [basePath, currentSearchParams] = fullPath.split("?");
+
+    // Compare base paths
+    if (baseLinkPath !== basePath) {
+      return false;
+    }
+
+    // If there are no search parameters, return true if base paths match
+    if (!linkSearchParams) {
+      return true;
+    }
+
+    // Convert search params strings to URLSearchParams objects
+    const linkParams = new URLSearchParams(linkSearchParams);
+    const currentParams = new URLSearchParams(currentSearchParams);
+
+    // Compare each parameter key and value
+    for (let [key, value] of linkParams.entries()) {
+      if (currentParams.get(key) !== value) {
+        return false;
+      }
+    }
+
+    return true;
+  };
+
   return (
     <ul className="navbar-nav align-items-lg-center">
       <li className="d-block d-lg-none">
@@ -45,8 +78,11 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
                   <li key={i}>
                     <NavLink
                       to={dm.link}
-                      className={`dropdown-item ${pathname === dm.link ? "active" : ""}`}
+                      className={`dropdown-item ${
+                        isExactActiveLink(dm.link) ? "activated" : ""
+                      }`}
                     >
+                     
                       <span>{dm.title}</span>
                     </NavLink>
                   </li>
@@ -76,7 +112,9 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
                             <li key={i}>
                               <NavLink
                                 to={sm.link}
-                                className={`dropdown-item ${pathname === sm.link ? "active" : ""}`}
+                                className={`dropdown-item ${
+                                  isExactActiveLink(sm.link) ? "actived" : ""
+                                }`}
                               >
                                 <span>{sm.title}</span>
                               </NavLink>
@@ -91,7 +129,13 @@ const Navbar = ({ logo_white = false }: { logo_white?: boolean }) => {
             </>
           )}
           {!menu.dropdown && !menu.mega_menu && (
-            <NavLink className="nav-link" to={menu.link} role="button">
+            <NavLink
+              className={`nav-link ${
+                isExactActiveLink(menu.link) ? "active" : ""
+              }`}
+              to={menu.link}
+              role="button"
+            >
               {menu.title}
             </NavLink>
           )}

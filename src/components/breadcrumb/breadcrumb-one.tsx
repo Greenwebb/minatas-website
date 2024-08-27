@@ -70,6 +70,7 @@ const BreadcrumbOne = ({
                       <NavLink to="/">Home</NavLink>
                     </li>
                     <li>/</li>
+                    <li>Services /</li>
                     <li>{page}</li>
                   </ul>
                 </div>

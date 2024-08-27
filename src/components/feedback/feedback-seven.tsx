@@ -12,7 +12,7 @@ const feedback_data = [
     id:2,
     desc:'Efficient, knowledgeable, & made our home search a smooth experience. Highly recommended agency!',
     name:'Mark Smith',
-    location:'United States',
+    location:'Zambia',
   },
   {
     id:3,

@@ -197,9 +197,10 @@
             @include transition(0.2s);
         }
     }
-    &:hover span:before,&.active span:before {
+    &:hover span:before,&.activated.active span:before {
         transform: scale(1);
     }
+    
 }
 
 

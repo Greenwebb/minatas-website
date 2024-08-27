@@ -5,36 +5,48 @@ import Navbar from "./navbar";
 import useSticky from "../../hooks/use-sticky";
 import LoginModal from "../../components/common/login-modal";
 
-
-
 const HeaderTwo = () => {
   const location = useLocation();
 
   // Define the logos with type annotations
-  const defaultLogo: string = '/assets/images/logo/logo_01.svg';
-  const aboutLogo: string = '/assets/images/logo/logo_02.svg';
-  const defaultStyles: string = `
-        .theme-main-menu.white-vr .nav-item .nav-link {
-    color: #fff;
-}
-    `;
+  const defaultLogo = '/assets/images/logo/logo_01.svg';
+  const aboutLogo = '/assets/images/logo/logo_02.svg';
+ 
+  // Define the styles as strings
+  const defaultStyles = `
+    .theme-main-menu.white-vr .nav-item .nav-link {
+      color: #fff;
+    }
+  `;
 
-  const navStyles: string = `
-        .theme-main-menu.white-vr .nav-item .nav-link {
-    color: #0e6939;
-}
-    `;
-  const logo: string = location.pathname === '/about-us' ? aboutLogo : defaultLogo;
-  const nav: string = location.pathname === '/about-us' ? navStyles : defaultStyles;
-  
+  const aboutNavStyles = `
+    .theme-main-menu.white-vr .nav-item .nav-link {
+      color: #0e6939;
+    }
+  `;
 
+ 
 
   const { sticky } = useSticky();
+
+  // Determine the logo and nav styles based on the current page and sticky state
+  const logo = location.pathname === '/about-us' 
+    ? sticky
+      ? defaultLogo 
+      : aboutLogo 
+    : defaultLogo;
+
+  const navStyles = location.pathname === '/about-us' 
+    ? sticky 
+      ? defaultStyles
+      : aboutNavStyles 
+    : defaultStyles;
+
   return (
     <>
-    <style>
-                {nav}
-            </style>
+      <style>
+        {navStyles}
+      </style>
       <header className={`theme-main-menu menu-overlay menu-style-one white-vr sticky-menu ${sticky ? 'fixed' : ''}`}>
         <div className="inner-content position-relative">
           <div className="top-header">

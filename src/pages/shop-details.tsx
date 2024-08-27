@@ -8,7 +8,7 @@ import product_data from "../data/product-data";
 import ProductDetailsArea from "../components/shop/product-details/product-details-area";
 import FancyBannerThree from "../components/fancy-banner/fancy-banner-three";
 import NewsletterBanner from "../components/newsletter/newsletter-banner";
-import FooterThree from "../layout/footer/footer-three";
+import FooterFour from "../layout/footer/footer-four";
 
 export default function ShopDetailsPage() {
   const { id } = useParams();
@@ -64,7 +64,7 @@ export default function ShopDetailsPage() {
         </main>
 
         {/* footer start */}
-        <FooterThree style_2={true} />
+        <FooterFour />
         {/* footer end */}
       </div>
     </Wrapper>

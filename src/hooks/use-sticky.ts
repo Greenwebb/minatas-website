@@ -7,6 +7,7 @@ const useSticky = () => {
     const stickyHeader = () => {
         if(window.scrollY > 80){
             setSticky(true)
+            
         }
         else{
             setSticky(false)

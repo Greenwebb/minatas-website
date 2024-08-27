@@ -1,5 +1,13 @@
 import { IMenu } from "../types/menu-d-t";
+import service_data  from "./service-data";
+import { IService }  from "./service-data";
 
+const generateDropdownMenus = (services: IService[]) => {
+  return services.map(service => ({
+    link: `/service-details?page=${service.page}`,
+    title: service.title,
+  }));
+};
 
 const menu_data:IMenu[] = [
   {
@@ -61,14 +69,8 @@ const menu_data:IMenu[] = [
     id:3,
     link:'/service-v1',
     title:'Products',
-    dropdown:false,
-    dropdown_menus:[
-      {link:'/shop',title:'Shop'},
-      {link:'/shop-details/1',title:'Shop Details'},
-      {link:'/cart',title:'Cart'},
-      {link:'/wishlist',title:'Wishlist'},
-      {link:'/checkout',title:'Checkout'},
-    ]
+    dropdown: true,
+    dropdown_menus: generateDropdownMenus(service_data)
   },
  
   {

@@ -637,7 +637,7 @@
     .screen_01 {
         right:-9%;
         top:12%;
-        width: 37.3%;
+        width: 33.3%;
         border-radius: 10px;
         box-shadow: 10px 30px 50px rgba(0, 0, 0, 0.06);
     }
@@ -645,6 +645,11 @@
         left:-11%;
         bottom:-9%;
         width: 65.5%;
+    }
+    .about_us.screen_02 {
+        left: 5%;
+        bottom: -9%;
+        width: 45.5%;
     }
     .screen_03 {
         left:-13%;
@@ -774,6 +779,13 @@
             width: 81.1% !important;
             bottom: 43% !important;
             right: -4% !important;
+            z-index: 1;
+            animation: jumpThree 5s infinite linear;
+        }
+        .screen_01.about_us {
+            width: 23.1% !important;
+            bottom: 44% !important;
+            right: -2% !important;
             z-index: 1;
             animation: jumpThree 5s infinite linear;
         }
