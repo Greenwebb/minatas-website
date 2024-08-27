@@ -12,7 +12,7 @@ const HeroBannerSix = () => {
           <div className="col-md-6 wow fadeInLeft">
             <div className="pt-20 pb-50">
             <h1 className="hero-heading fw-bold">
-                Get loan your loan <text className="hero-heading fw-bold" style={{ color: "#b16b42" }}>today!</text>
+             Secure Your Loan <text className="hero-heading fw-bold" style={{ color: "#b16b42" }}>today!</text>
               </h1>
               <p className="text-lg pt-35 lg-pt-30 pb-35 lg-pb-20">
                 Take the first step towards achieving your goals – apply now.

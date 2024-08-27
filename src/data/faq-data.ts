@@ -24,11 +24,6 @@ const faq_data: IFaq[] = [
   },
   {
     id: "Four",
-    title: "Can I repay my loan early without any penalties?",
-    desc: "Yes, at Minatas Resources, we encourage responsible borrowing and offer flexible repayment options. You can repay your loan early without incurring any penalties. This allows you to save on interest and reduce your financial burden.",
-  },
-  {
-    id: "Five",
     title: "What happens if I miss a loan repayment?",
     desc: "If you miss a loan repayment, it's important to contact us immediately to discuss your situation. We understand that unexpected events can happen, and we're here to help. We'll work with you to explore possible solutions, such as restructuring your repayment plan, to ensure that you stay on track.",
   },

@@ -11,7 +11,7 @@ const TextFeatureThree = ({cls,style_2}:{cls?:string;style_2?:boolean}) => {
           <div className="col-xxl-5 col-lg-6 ms-auto d-flex flex-column order-lg-last wow fadeInRight">
             <div className="title-one">
               <div className="upper-title">Who we are</div>
-              <h2>Guideline for your financial grow.</h2>
+              <h2>We are here for you!</h2>
             </div>
             <p className="text-lg mt-45 lg-mt-30 mb-35 lg-mb-30">
             Minatas Resources Limited is a pioneering financial institution committed to advancing financial inclusion for individuals and businesses traditionally excluded by mainstream financial institutions. Established in 2022 under the auspices of Minatas Resources Limited, the company operates under the framework of the Lenders Licensing Act and Ministry of Finance in Zambia, with a mission to provide tailored financial products and solutions to Micro, Small, and Medium Enterprises (MSMEs) and individuals.

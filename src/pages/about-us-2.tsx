@@ -39,10 +39,7 @@ export default function AboutUsTwoPage() {
           <TextFeatureThree cls="text-feature-seven mt-160 lg-mt-80 pb-200 lg-pb-120"/>
           {/* text feature three area end */}
 
-          {/* text feature three area start */}
-          <TextFeatureTwo/>
-          {/* text feature three area end */}
-
+    
           {/* block feature four start */}
           <BlockFeatureFour/>
           {/* block feature four end */}
