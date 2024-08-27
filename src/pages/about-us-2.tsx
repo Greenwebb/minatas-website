@@ -4,7 +4,6 @@ import HeaderTwo from "../layout/header/header-two";
 import BreadcrumbTwo from "../components/breadcrumb/breadcrumb-two";
 import TextFeatureThree from "../components/text-feature/text-feature-three";
 import FancyBannerThree from "../components/fancy-banner/fancy-banner-three";
-import TextFeatureTwo from "../components/text-feature/text-feature-two";
 import BlockFeatureFour from "../components/block-feature/block-feature-four";
 
 import FancyBannerFive from "../components/fancy-banner/fancy-banner-five";
