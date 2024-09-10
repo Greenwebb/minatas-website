@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 // internal
-import ErrorMsg from "../common/err-msg";
+import ErrMsg from "../common/err-msg";
 
 type FormData = {
   coupon: string;
@@ -24,7 +24,7 @@ const CheckoutCouponForm = () => {
     <form onSubmit={onSubmit}>
       <div className="mb-20">
         <input type="text" id="coupon" {...register("coupon")} placeholder="Coupon code" />
-        <ErrorMsg msg={errors.coupon?.message as string} />
+        <ErrMsg msg={errors.coupon?.message as string} />
       </div>
       <button type="submit" className="btn-ten tran3s">Apply coupon</button>
     </form>

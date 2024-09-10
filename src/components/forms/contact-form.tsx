@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import ErrorMsg from '../common/err-msg';
+import ErrMsg from '../common/err-msg';
 
 type FormData = {
   name: string;
@@ -37,7 +37,7 @@ const ContactForm = () => {
               name='name'
             />
             <div className="help-block with-errors">
-             <ErrorMsg msg={errors.name?.message as string} />
+             <ErrMsg msg={errors.name?.message as string} />
             </div>
           </div>
         </div>
@@ -51,7 +51,7 @@ const ContactForm = () => {
               name="email"
             />
             <div className="help-block with-errors">
-             <ErrorMsg msg={errors.email?.message as string} />
+             <ErrMsg msg={errors.email?.message as string} />
             </div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const ContactForm = () => {
               name="message"
             ></textarea>
             <div className="help-block with-errors">
-             <ErrorMsg msg={errors.message?.message as string} />
+             <ErrMsg msg={errors.message?.message as string} />
             </div>
           </div>
         </div>

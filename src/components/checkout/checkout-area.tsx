@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 // internal
-import ErrorMsg from '../common/err-msg';
+import ErrMsg from '../common/err-msg';
 import CheckoutLoginForm from './checkout-login-form';
 import CheckoutCouponForm from './checkout-coupon-form';
 import CheckoutOrderReview from './checkout-order-review';
@@ -80,19 +80,19 @@ const CheckoutArea = () => {
                   <div className="col-lg-6">
                     <div className='mb-55'>
                       <input type="text" id='firstName' {...register("firstName")} placeholder="First Name*" className="single-input-wrapper" />
-                      <ErrorMsg msg={errors.firstName?.message as string} />
+                      <ErrMsg msg={errors.firstName?.message as string} />
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <div className='mb-55'>
                       <input type="text" id='lastName' {...register("lastName")} placeholder="Last Name*" className="single-input-wrapper" />
-                      <ErrorMsg msg={errors.lastName?.message as string} />
+                      <ErrMsg msg={errors.lastName?.message as string} />
                     </div>
                   </div>
                   <div className="col-12">
                     <div className='mb-55'>
                       <input type="text" id='company' {...register("company")} placeholder="Company Name*" className="single-input-wrapper" />
-                      <ErrorMsg msg={errors.company?.message as string} />
+                      <ErrMsg msg={errors.company?.message as string} />
                     </div>
                   </div>
                   <div className="col-12">
@@ -107,41 +107,41 @@ const CheckoutArea = () => {
                         <option value="tu">Turky</option>
                         <option value="eg">Egypt</option>
                       </select>
-                      <ErrorMsg msg={errors.country?.message as string} />
+                      <ErrMsg msg={errors.country?.message as string} />
                     </div>
                   </div>
                   <div className="col-12">
                     <div className='mb-55'>
                       <input type="text" id='address' {...register("address")} placeholder="Street Address*" className="single-input-wrapper" />
-                      <ErrorMsg msg={errors.address?.message as string} />
+                      <ErrMsg msg={errors.address?.message as string} />
                     </div>
                   </div>
                   <div className="col-lg-4">
                     <div className='mb-55'>
                       <input type="text" id='city' {...register("city")} placeholder="Town/City*" className="single-input-wrapper" />
-                      <ErrorMsg msg={errors.city?.message as string} />
+                      <ErrMsg msg={errors.city?.message as string} />
                     </div>
                   </div>
                   <div className="col-lg-4">
                     <div className='mb-55'>
                       <input type="text" id='state' {...register("state")} placeholder="State*" className="single-input-wrapper" />
-                      <ErrorMsg msg={errors.state?.message as string} />
+                      <ErrMsg msg={errors.state?.message as string} />
                     </div>
                   </div>
                   <div className="col-lg-4">
                     <div className='mb-55'>
                       <input type="text" id='zipCode' {...register("zipCode")} placeholder="Zip Code*" className="single-input-wrapper" />
-                      <ErrorMsg msg={errors.zipCode?.message as string} />
+                      <ErrMsg msg={errors.zipCode?.message as string} />
                     </div>
                   </div>
                   <div className="col-lg-6">
                     <input type="email" id='email' {...register("email")} placeholder="Email Address*" className="single-input-wrapper" />
-                    <ErrorMsg msg={errors.email?.message as string} />
+                    <ErrMsg msg={errors.email?.message as string} />
                   </div>
                   <div className="col-lg-6">
                     <div className='mb-55'>
                       <input type="text" id='phone' {...register("phone")} placeholder="Phone Number*" className="single-input-wrapper" />
-                      <ErrorMsg msg={errors.phone?.message as string} />
+                      <ErrMsg msg={errors.phone?.message as string} />
                     </div>
                   </div>
                   <div className="col-12">

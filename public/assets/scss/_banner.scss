@@ -3,7 +3,7 @@
     background: $color-two;
     z-index: 9;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
@@ -16,7 +16,7 @@
         width: 100%;
         height: 100%;
         left: 0;
-        top:0;
+        top: 0;
         z-index: -1;
         .hero-img {
             position: absolute;
@@ -28,7 +28,11 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .slick-list,.slick-track,.item {height: 100%;}
+        .slick-list,
+        .slick-track,
+        .item {
+            height: 100%;
+        }
     }
 
     .hero-heading {
@@ -45,7 +49,7 @@
         width: 105px;
         height: 105px;
         border: 2px solid #fff;
-        top:20%;
+        top: 20%;
         left: 4%;
         z-index: 1;
         &:hover {
@@ -89,33 +93,32 @@
         button {
             position: absolute;
             right: 0;
-            top:0;
+            top: 0;
             bottom: 0;
             border-radius: 50px;
-
         }
     }
     .shape_01 {
-        top:22%;
+        top: 22%;
         left: 7%;
         width: 3.1%;
         min-width: 30px;
         animation: rotated 50s infinite linear;
     }
     .shape_02 {
-        top:40%;
+        top: 40%;
         right: 7%;
         width: 1.8%;
         min-width: 22px;
         animation: rotated 48s infinite linear;
     }
     .shape_03 {
-        top:36%;
+        top: 36%;
         left: 0;
         width: 15.57%;
     }
     .shape_04 {
-        top:49%;
+        top: 49%;
         right: 0;
         width: 15%;
     }
@@ -146,9 +149,9 @@
         .round-bg {
             position: absolute;
             z-index: -2;
-            top:0;
+            top: 0;
             left: 50%;
-            transform: translate(-50% , -7%);
+            transform: translate(-50%, -7%);
         }
     }
 }
@@ -216,7 +219,7 @@
         background: url(/assets/images/assets/bg_05.svg) no-repeat left top;
         background-size: cover;
         border-radius: 0 30px 30px 0;
-        top:0;
+        top: 0;
         bottom: 0;
         right: 0;
         z-index: -1;
@@ -228,7 +231,7 @@
             z-index: 1;
         }
         .shape_02 {
-            top:34%;
+            top: 34%;
             left: 0;
             transform: translateX(-50%);
             width: 19.34%;
@@ -237,9 +240,8 @@
 }
 // Hero Banner Six
 .hero-banner-six {
-
-     background: url(/assets/images/banner/1.webp) no-repeat center;
-     background-size: cover;
+    background: url(/assets/images/banner/1.webp) no-repeat center;
+    background-size: cover;
 
     .hero-heading {
         font-size: 100px;
@@ -267,6 +269,12 @@
             border: 1px solid #000;
             border-radius: 10px;
         }
+        select {
+            height: 65px;
+            padding: 0 20px;
+            border: 1px solid #000;
+            border-radius: 10px;
+        }
         button {
             height: 60px;
             border-radius: 10px;
@@ -276,6 +284,236 @@
                 background: $color-two;
                 color: #fff;
             }
+        }
+        .bg-primary-color {
+            background: $color-seven;
+            color: $color-white;
+            &:hover {
+                background: $color-six;
+                color: #fff;
+            }
+        }
+        .bg-secondary-color {
+            background: $color-secondary;
+        }
+        .loan-summary {
+            padding: 16px;
+            margin: 8px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+
+            .loan-summary__header {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                padding-bottom: 8px;
+
+                .loan-summary__title {
+                    font-size: 1rem;
+                    line-height: 1em;
+                    align-self: initial;
+                    justify-content: left;
+                    flex: auto;
+                }
+
+                .loan-summary__status {
+                    font-size: 0.91rem;
+                    color: $color-white !important;
+                    background-color: #3d784b;
+                    padding: 4px 8px;
+                    border-radius: 4px;
+                }
+            }
+
+            .loan-summary__details {
+                margin: 16px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border: #076535 dashed 2px;
+                border-radius: 1.5rem;
+                padding: 2rem;
+
+                .loan-summary__detail {
+                    padding: 8px 0;
+                    border-bottom: 1px solid #dee2e6;
+
+                    &:last-child {
+                        border-bottom: none;
+                    }
+
+                    .loan-summary__label {
+                        display: block;
+                        font-weight: bold;
+                        color: $color-eight;
+                        margin-bottom: 4px;
+                    }
+
+                    .loan-summary__value {
+                        font-size: 2rem;
+                        color: $text-color;
+                        justify-content: center;
+                        font-weight: bold;
+                    }
+                }
+            }
+            .loan-summary__footer {
+                .loan-summary__footer {
+                    .terms-container {
+                        display: flex;
+                        align-items: center;
+                        padding: 16px;
+                        background-color: #f5f5f5;
+                        border-radius: 8px;
+                    }
+
+                    .checkbox-wrapper {
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #333;
+                        cursor: pointer;
+                    }
+
+                    .checkbox {
+                        margin-right: 12px;
+                        cursor: pointer;
+                        height: 20px;
+                        width: 20px;
+                        appearance: none;
+                        background-color: #fff;
+                        border: 2px solid #ccc;
+                        border-radius: 4px;
+                        position: relative;
+
+                        &:checked {
+                            background-color: $color-six;
+                            border-color: $color-six;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 3px;
+                                left: 5px;
+                                width: 8px;
+                                height: 14px;
+                                border: solid #fff;
+                                border-width: 0 3px 3px 0;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+
+                    .terms-text,
+                    .caution-text {
+                        margin-left: 4px;
+                        color: #666;
+                    }
+
+                    .terms-link,
+                    .caution-link {
+                        color: $color-six;
+                        text-decoration: underline;
+                        cursor: pointer;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .caution-link {
+                        color: rgba(255, 0, 0, 0.525);
+                    }
+                }
+
+                .checkbox-wrapper {
+                    display: flex;
+                    align-items: center;
+                    font-size: 16px;
+                    font-weight: 500;
+                    color: #333;
+                    cursor: pointer;
+
+                    .checkbox {
+                        margin-right: 12px;
+                        cursor: pointer;
+                        padding: 0.5rem;
+                        height: 20px;
+                        width: 20px;
+                        appearance: none;
+                        background-color: #fff;
+                        border: 2px solid #ccc;
+                        border-radius: 4px;
+                        position: relative;
+
+                        &:checked {
+                            background-color: $color-seven;
+                            border-color: $color-seven;
+
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                top: 0px;
+                                left: 5px;
+                                width: 8px;
+                                height: 14px;
+                                border: solid #fff;
+                                border-width: 0 3px 3px 0;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                    .loader {
+                        border: 4px solid rgba(0, 0, 0, 0.1);
+                        border-radius: 50%;
+                        border-top: 4px solid #3498db;
+                        width: 40px;
+                        height: 40px;
+                        animation: spin 1s linear infinite;
+                        margin: 20px auto;
+                    }
+
+                    @keyframes spin {
+                        0% {
+                            transform: rotate(0deg);
+                        }
+                        100% {
+                            transform: rotate(360deg);
+                        }
+                    }
+
+                    .terms-text,
+                    .caution-text {
+                        margin-left: 4px;
+                        color: #666;
+                    }
+
+                    .terms-link,
+                    .caution-link {
+                        color: $color-seven;
+                        text-decoration: underline;
+                        cursor: pointer;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+
+                    .caution-link {
+                        color: rgba(255, 0, 0, 0.525);
+                    }
+                }
+            }
+        }
+        button:disabled,
+        button[disabled] {
+            border: 1px solid $text-color;
+            background-color: $text-color;
+            color: #b5b5b5;
         }
     }
     .media-wrapper {
@@ -321,7 +559,7 @@
     background: $color-two;
     z-index: 9;
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 50%;
@@ -331,7 +569,7 @@
         z-index: -1;
     }
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 20%;
@@ -347,7 +585,7 @@
         width: 100%;
         height: 100%;
         left: 0;
-        top:0;
+        top: 0;
         z-index: -2;
         .hero-img {
             position: absolute;
@@ -359,7 +597,11 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-        .slick-list,.slick-track,.item {height: 100%;}
+        .slick-list,
+        .slick-track,
+        .item {
+            height: 100%;
+        }
     }
     .hero-heading {
         font-weight: 700;
@@ -388,11 +630,33 @@
             height: 60px;
             border-radius: 10px;
             font-size: 17px;
-            background: $color-nine;
+        }
+
+        .color-six {
+            background: $color-seven;
+            color: white;
             &:hover {
-                background: $color-two;
+                background: $color-nine;
                 color: #fff;
             }
+        }
+        .color-seven {
+            background: $color-secondary;
+            color: white;
+            &:hover {
+                background: $color-nine;
+                color: #fff;
+            }
+        }
+
+        .color-secondary {
+            background-color: $color-secondary;
+        }
+        .bg-primary-color {
+            background-color: $color-seven;
+        }
+        .bg-secondary-color {
+            background-color: $color-secondary;
         }
     }
 }
@@ -403,10 +667,10 @@
     padding-left: 12px;
     padding-right: 12px;
     &:after {
-        content: '';
+        content: "";
         position: absolute;
         right: 0;
-        top:0;
+        top: 0;
         bottom: 0;
         left: 50%;
         background: $color-one;
@@ -437,16 +701,15 @@
     padding: 80px 0;
     z-index: 1;
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
-        top:0;
+        top: 0;
         width: 100%;
         height: 100%;
         z-index: -1;
-        
-        mix-blend-mode: darken;
 
+        mix-blend-mode: darken;
     }
     .title-one h2 {
         font-size: 58px;
@@ -466,14 +729,14 @@
 }
 // Fancy Banner Four
 .fancy-banner-four {
-    background: #DCEFF0;
+    background: #dceff0;
     z-index: 1;
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        top:0;
+        top: 0;
         right: 0;
         z-index: -1;
         background: url(/assets/images/shape/shape_10.svg) no-repeat left bottom;
@@ -486,11 +749,11 @@
         padding-left: 42px;
         margin-bottom: 13px;
         &:after {
-            content: '\F633';
+            content: "\F633";
             position: absolute;
             font-family: $bootstrapFont;
             font-size: 0.95em;
-            top:3px;
+            top: 3px;
             left: 0;
             color: #000;
         }
@@ -500,7 +763,7 @@
         height: 58px;
         padding: 0 5px 0 25px;
         margin: 10px 20px 0 0;
-        background: #1B1B1B;
+        background: #1b1b1b;
         color: #fff;
         text-align: left;
         transition: all 0.3s ease-in-out;
@@ -508,7 +771,9 @@
             transform: translateY(-5px);
             box-shadow: -5px 10px 30px rgba(0, 0, 0, 0.05);
         }
-        .icon {margin-right: 14px;}
+        .icon {
+            margin-right: 14px;
+        }
         span {
             font-size: 12px;
             color: rgba(255, 255, 255, 0.6);
@@ -522,11 +787,15 @@
         }
         &.ios-button {
             background: #fff;
-            border-color: #DADADA;
-            span {color: #999999;}
-            strong {color: #000;}
+            border-color: #dadada;
+            span {
+                color: #999999;
+            }
+            strong {
+                color: #000;
+            }
         }
-      }
+    }
 }
 // Fancy Banner Five
 .fancy-banner-five {
@@ -549,17 +818,15 @@
         }
     }
     &:before {
-        content: '';
+        content: "";
         position: absolute;
         left: 0;
-        top:0;
+        top: 0;
         width: 100%;
         height: 100%;
         z-index: -1;
-        background: #113D2F;
+        background: #113d2f;
         mix-blend-mode: hard-light;
-
-
     }
     h2 {
         font-size: 100px;
@@ -569,7 +836,7 @@
         width: 200px;
         height: 200px;
         padding: 22px;
-        background: #FFE86B;
+        background: #ffe86b;
         &:hover {
             transform: rotate(15deg);
         }
@@ -588,7 +855,7 @@
         width: 200px;
         height: 200px;
         padding: 22px;
-        background: #FFE86B;
+        background: #ffe86b;
         &:hover {
             transform: rotate(15deg);
         }
@@ -600,24 +867,29 @@
         background: url(/assets/images/media/img_50.jpg) no-repeat center;
         background-size: cover;
         &:before {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             right: 0;
-            top:0;
+            top: 0;
             height: 70%;
             background: linear-gradient(180deg, rgba(0, 0, 0, 0) 14.17%, rgba(0, 0, 0, 0.8) 101.25%);
             transform: rotate(-180deg);
             z-index: -1;
         }
         &:after {
-            content: '';
+            content: "";
             position: absolute;
             left: 0;
             right: 0;
-            bottom:0;
+            bottom: 0;
             height: 70%;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.58) 47.84%, rgba(0, 0, 0, 0.87) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.58) 47.84%,
+                rgba(0, 0, 0, 0.87) 100%
+            );
             z-index: -1;
         }
         li {
@@ -632,21 +904,21 @@
             position: relative;
 
             &:before {
-                content: '';
+                content: "";
                 position: absolute;
                 width: 24px;
                 height: 24px;
                 border-radius: 50%;
                 background: $color-two;
                 left: 27px;
-                top:27px;
+                top: 27px;
                 @include transition(0.2s);
             }
             &:after {
-                content: '\F633';
+                content: "\F633";
                 position: absolute;
                 font-family: $bootstrapFont;
-                top:21px;
+                top: 21px;
                 left: 31px;
                 color: #fff;
                 font-size: 16px;
@@ -656,7 +928,7 @@
                 background: $color-one;
             }
             &:hover:after {
-                color:#000;
+                color: #000;
             }
         }
         .shape_01 {
@@ -670,7 +942,7 @@
 // Fancy Banner Eight
 .fancy-banner-eight {
     .bg-wrapper {
-        background: #F3F8F7;
+        background: #f3f8f7;
         padding: 30px 75px 0;
     }
     .media-wrapper {
@@ -692,10 +964,10 @@
     .main-wrapper {
         padding: 50px 0 45px;
         &.top-border {
-            border-top: 1px solid #E2E2E2;
+            border-top: 1px solid #e2e2e2;
         }
         &.bottom-border {
-            border-bottom: 1px solid #E2E2E2;
+            border-bottom: 1px solid #e2e2e2;
         }
     }
     h2 {
@@ -708,7 +980,7 @@
             font-size: 18px;
             padding: 0 30px;
             height: 60px;
-            background: #F6F6F6;
+            background: #f6f6f6;
             border: none;
             border-radius: 35px;
         }
@@ -719,12 +991,14 @@
             font-size: 28px;
             color: #fff;
             background: #101010;
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 background: $color-two;
             }
             &.color-two {
                 background: $color-two;
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     background: #000;
                 }
             }
@@ -762,29 +1036,29 @@
     background-size: cover;
     z-index: 1;
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 35%;
-        top:0;
+        top: 0;
         left: 0;
         z-index: -1;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.53) 0%, rgba(0, 0, 0, 0) 100%);
     }
     &::after {
-        content: '';
+        content: "";
         position: absolute;
         width: 100%;
         height: 100%;
-        top:0;
+        top: 0;
         left: 0;
         z-index: -1;
         background: linear-gradient(121.31deg, rgba(0, 0, 0, 0) 0.55%, rgba(0, 0, 0, 0.88) 98.35%);
     }
     .hero-heading {
         color: $color-white;
-        
-        .text-style{
+
+        .text-style {
             color: $color-secondary;
         }
         font-weight: 700;
@@ -807,7 +1081,10 @@
         li {
             color: rgba($color: #fff, $alpha: 0.5);
             margin-right: 5px;
-            &:last-child {margin: 0; color: #fff;}
+            &:last-child {
+                margin: 0;
+                color: #fff;
+            }
             a {
                 @include transition(0.2s);
                 &:hover {
@@ -833,7 +1110,7 @@
 .inner-banner-two {
     z-index: 1;
     .pager {
-        border-bottom: 1px solid #0A4020;
+        border-bottom: 1px solid #0a4020;
         padding-bottom: 2px;
         li {
             color: #000;
@@ -855,7 +1132,7 @@
         line-height: 1.023em;
         margin: 22px 0 40px;
 
-        .text-style{
+        .text-style {
             color: $color-secondary;
         }
     }

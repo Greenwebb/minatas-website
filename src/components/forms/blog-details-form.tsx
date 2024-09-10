@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
-import ErrorMsg from '../common/err-msg';
+import ErrMsg from '../common/err-msg';
 
 type FormData = {
   name: string;
@@ -28,16 +28,16 @@ const BlogDetailsForm = () => {
       <div className="input-wrapper mb-35">
         <label>Name*</label>
         <input type="text" {...register("name")} id='name' placeholder="Rashed Kabir" />
-        <ErrorMsg msg={errors.name?.message as string} />
+        <ErrMsg msg={errors.name?.message as string} />
       </div>
       <div className="input-wrapper mb-40">
         <label>Email*</label>
         <input type="email" {...register("email")} id='email' placeholder="rshdkabir@gmail.com" />
-        <ErrorMsg msg={errors.email?.message as string} />
+        <ErrMsg msg={errors.email?.message as string} />
       </div>
       <div className="input-wrapper mb-30">
         <textarea placeholder="Your Comment" {...register("comment")} id='comment'></textarea>
-        <ErrorMsg msg={errors.comment?.message as string} />
+        <ErrMsg msg={errors.comment?.message as string} />
       </div>
       <button type='submit' className="btn-four tran3s rounded-2">Post Comment</button>
     </form>

@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 // internal
-import ErrorMsg from "../common/err-msg";
+import ErrMsg from "../common/err-msg";
 
 type FormData = {
   email: string;
@@ -33,7 +33,7 @@ const CheckoutLoginForm = () => {
               type="text"
               placeholder="User email"
             />
-            <ErrorMsg msg={errors.email?.message as string} />
+            <ErrMsg msg={errors.email?.message as string} />
           </div>
         </div>
         <div className="col-md-6">
@@ -44,7 +44,7 @@ const CheckoutLoginForm = () => {
               id="password"
               {...register("password")}
             />
-            <ErrorMsg msg={errors.password?.message as string} />
+            <ErrMsg msg={errors.password?.message as string} />
           </div>
         </div>
       </div>
